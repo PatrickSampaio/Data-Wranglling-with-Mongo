@@ -1,7 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="f4faec39-03ff-4511-85fb-ec9c407919ff" name="Default" comment="" />
+    <list default="true" id="f4faec39-03ff-4511-85fb-ec9c407919ff" name="Default" comment="">
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Utils/RequestUtils.py" afterPath="$PROJECT_DIR$/Utils/RequestUtils.py" />
+    </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -11,36 +14,14 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="musicbrainz.py" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/Data Wranglling in JSON/musicbrainz.py">
+      <file leaf-file-name="nytimes.py" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/Data Wranglling in JSON/nytimes.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="155">
-              <caret line="33" column="96" lean-forward="false" selection-start-line="33" selection-start-column="96" selection-end-line="33" selection-end-column="96" />
+            <state relative-caret-position="-280">
+              <caret line="47" column="38" lean-forward="true" selection-start-line="47" selection-start-column="38" selection-end-line="47" selection-end-column="38" />
               <folding>
-                <element signature="e#305#316#0" expanded="true" />
+                <element signature="e#1207#1218#0" expanded="true" />
               </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="excel-using-csv-module.py" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/Data Wranglling in Excel/excel-using-csv-module.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="241">
-              <caret line="54" column="10" lean-forward="true" selection-start-line="54" selection-start-column="10" selection-end-line="54" selection-end-column="10" />
-              <folding>
-                <element signature="e#765#775#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="_pydev_execfile.py" pinned="false" current-in-tab="false">
-        <entry file="file://$APPLICATION_HOME_DIR$/helpers/pydev/_pydev_imps/_pydev_execfile.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="255">
-              <caret line="17" column="0" lean-forward="false" selection-start-line="17" selection-start-column="0" selection-end-line="17" selection-end-column="0" />
-              <folding />
             </state>
           </provider>
         </entry>
@@ -48,8 +29,8 @@
       <file leaf-file-name="RequestUtils.py" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/Utils/RequestUtils.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="125">
-              <caret line="13" column="0" lean-forward="false" selection-start-line="13" selection-start-column="0" selection-end-line="13" selection-end-column="0" />
+            <state relative-caret-position="271">
+              <caret line="27" column="33" lean-forward="false" selection-start-line="27" selection-start-column="33" selection-end-line="27" selection-end-column="33" />
               <folding />
             </state>
           </provider>
@@ -78,9 +59,11 @@
       <list>
         <option value="$PROJECT_DIR$/Data Wranglling in Excel/excel-exploration.py" />
         <option value="$PROJECT_DIR$/Utils/PrintUtils.py" />
-        <option value="$PROJECT_DIR$/Utils/RequestUtils.py" />
         <option value="$PROJECT_DIR$/Data Wranglling in JSON/musicbrainz.py" />
         <option value="$PROJECT_DIR$/Data Wranglling in Excel/excel-using-csv-module.py" />
+        <option value="$PROJECT_DIR$/Data Wranglling in Excel/excel-to-csv.py" />
+        <option value="$PROJECT_DIR$/Utils/RequestUtils.py" />
+        <option value="$PROJECT_DIR$/Data Wranglling in JSON/nytimes.py" />
       </list>
     </option>
   </component>
@@ -114,7 +97,12 @@
             <path>
               <item name="Data Wrangling" type="b2602c69:ProjectViewProjectNode" />
               <item name="Data Wrangling" type="462c0819:PsiDirectoryNode" />
-              <item name="Data Wranglling in Excel" type="462c0819:PsiDirectoryNode" />
+              <item name="Data Wranglling in JSON" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="Data Wrangling" type="b2602c69:ProjectViewProjectNode" />
+              <item name="Data Wrangling" type="462c0819:PsiDirectoryNode" />
+              <item name="Utils" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
@@ -139,7 +127,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Python.excel-using-csv-module">
+  <component name="RunManager" selected="Python.nytimes">
     <configuration name="excel-exploration" type="PythonConfigurationType" factoryName="Python" temporary="true">
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
@@ -153,6 +141,23 @@
       <option name="ADD_SOURCE_ROOTS" value="true" />
       <module name="Data Wrangling" />
       <option name="SCRIPT_NAME" value="$PROJECT_DIR$/Data Wranglling in Excel/excel-exploration.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+    </configuration>
+    <configuration name="excel-to-csv" type="PythonConfigurationType" factoryName="Python" temporary="true">
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/Data Wranglling in Excel" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <module name="Data Wrangling" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/Data Wranglling in Excel/excel-to-csv.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
@@ -191,16 +196,37 @@
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
     </configuration>
-    <list size="3">
+    <configuration name="nytimes" type="PythonConfigurationType" factoryName="Python" temporary="true">
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/Data Wranglling in JSON" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <module name="Data Wrangling" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/Data Wranglling in JSON/nytimes.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+    </configuration>
+    <list size="5">
       <item index="0" class="java.lang.String" itemvalue="Python.excel-exploration" />
       <item index="1" class="java.lang.String" itemvalue="Python.musicbrainz" />
       <item index="2" class="java.lang.String" itemvalue="Python.excel-using-csv-module" />
+      <item index="3" class="java.lang.String" itemvalue="Python.excel-to-csv" />
+      <item index="4" class="java.lang.String" itemvalue="Python.nytimes" />
     </list>
     <recent_temporary>
-      <list size="3">
-        <item index="0" class="java.lang.String" itemvalue="Python.excel-using-csv-module" />
-        <item index="1" class="java.lang.String" itemvalue="Python.musicbrainz" />
-        <item index="2" class="java.lang.String" itemvalue="Python.excel-exploration" />
+      <list size="5">
+        <item index="0" class="java.lang.String" itemvalue="Python.nytimes" />
+        <item index="1" class="java.lang.String" itemvalue="Python.excel-to-csv" />
+        <item index="2" class="java.lang.String" itemvalue="Python.excel-using-csv-module" />
+        <item index="3" class="java.lang.String" itemvalue="Python.musicbrainz" />
+        <item index="4" class="java.lang.String" itemvalue="Python.excel-exploration" />
       </list>
     </recent_temporary>
   </component>
@@ -249,7 +275,7 @@
       <breakpoints>
         <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
           <url>file://$PROJECT_DIR$/Utils/RequestUtils.py</url>
-          <line>26</line>
+          <line>21</line>
           <option name="timeStamp" value="1" />
         </line-breakpoint>
         <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
@@ -257,8 +283,35 @@
           <line>48</line>
           <option name="timeStamp" value="10" />
         </line-breakpoint>
+        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
+          <url>file://$PROJECT_DIR$/Data Wranglling in Excel/excel-to-csv.py</url>
+          <line>54</line>
+          <option name="timeStamp" value="14" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
+          <url>file://$PROJECT_DIR$/Data Wranglling in Excel/excel-to-csv.py</url>
+          <line>40</line>
+          <option name="timeStamp" value="20" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
+          <url>file://$PROJECT_DIR$/Data Wranglling in Excel/excel-to-csv.py</url>
+          <line>82</line>
+          <option name="timeStamp" value="21" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
+          <url>file://$PROJECT_DIR$/Data Wranglling in JSON/nytimes.py</url>
+          <line>99</line>
+          <option name="timeStamp" value="30" />
+        </line-breakpoint>
       </breakpoints>
-      <option name="time" value="11" />
+      <default-breakpoints>
+        <breakpoint type="python-exception">
+          <properties notifyOnTerminate="true" exception="BaseException">
+            <option name="notifyOnTerminate" value="true" />
+          </properties>
+        </breakpoint>
+      </default-breakpoints>
+      <option name="time" value="33" />
     </breakpoint-manager>
     <watches-manager />
   </component>
@@ -289,14 +342,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Utils/RequestUtils.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="125">
-          <caret line="13" column="0" lean-forward="false" selection-start-line="13" selection-start-column="0" selection-end-line="13" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/Data Wranglling in JSON/musicbrainz.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="155">
@@ -321,6 +366,42 @@
           <caret line="54" column="10" lean-forward="true" selection-start-line="54" selection-start-column="10" selection-end-line="54" selection-end-column="10" />
           <folding>
             <element signature="e#765#775#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file:///usr/local/lib/python3.5/dist-packages/xlrd/sheet.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="118">
+          <caret line="414" column="0" lean-forward="false" selection-start-line="414" selection-start-column="0" selection-end-line="414" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Data Wranglling in Excel/excel-to-csv.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="230">
+          <caret line="90" column="0" lean-forward="true" selection-start-line="90" selection-start-column="0" selection-end-line="90" selection-end-column="0" />
+          <folding>
+            <element signature="e#295#306#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Utils/RequestUtils.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="271">
+          <caret line="27" column="33" lean-forward="false" selection-start-line="27" selection-start-column="33" selection-end-line="27" selection-end-column="33" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Data Wranglling in JSON/nytimes.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-280">
+          <caret line="47" column="38" lean-forward="true" selection-start-line="47" selection-start-column="38" selection-end-line="47" selection-end-column="38" />
+          <folding>
+            <element signature="e#1207#1218#0" expanded="true" />
           </folding>
         </state>
       </provider>
