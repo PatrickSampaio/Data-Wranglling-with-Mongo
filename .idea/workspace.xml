@@ -2,8 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="f4faec39-03ff-4511-85fb-ec9c407919ff" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Utils/RequestUtils.py" afterPath="$PROJECT_DIR$/Utils/RequestUtils.py" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Data Wranglling in Excel/.~lock.2013_ERCOT_Hourly_Load_Data.xls#" afterPath="" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -14,14 +13,24 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="nytimes.py" pinned="false" current-in-tab="true">
+      <file leaf-file-name="nytimes.py" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/Data Wranglling in JSON/nytimes.py">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="-280">
-              <caret line="47" column="38" lean-forward="true" selection-start-line="47" selection-start-column="38" selection-end-line="47" selection-end-column="38" />
+              <caret line="47" column="38" lean-forward="false" selection-start-line="47" selection-start-column="38" selection-end-line="47" selection-end-column="38" />
               <folding>
                 <element signature="e#1207#1218#0" expanded="true" />
               </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="authors.py" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/Extracting Data From XML/authors.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="226">
+              <caret line="48" column="0" lean-forward="true" selection-start-line="48" selection-start-column="0" selection-end-line="48" selection-end-column="0" />
+              <folding />
             </state>
           </provider>
         </entry>
@@ -64,6 +73,7 @@
         <option value="$PROJECT_DIR$/Data Wranglling in Excel/excel-to-csv.py" />
         <option value="$PROJECT_DIR$/Utils/RequestUtils.py" />
         <option value="$PROJECT_DIR$/Data Wranglling in JSON/nytimes.py" />
+        <option value="$PROJECT_DIR$/Extracting Data From XML/authors.py" />
       </list>
     </option>
   </component>
@@ -97,12 +107,7 @@
             <path>
               <item name="Data Wrangling" type="b2602c69:ProjectViewProjectNode" />
               <item name="Data Wrangling" type="462c0819:PsiDirectoryNode" />
-              <item name="Data Wranglling in JSON" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="Data Wrangling" type="b2602c69:ProjectViewProjectNode" />
-              <item name="Data Wrangling" type="462c0819:PsiDirectoryNode" />
-              <item name="Utils" type="462c0819:PsiDirectoryNode" />
+              <item name="Extracting Data From XML" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
@@ -127,20 +132,20 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Python.nytimes">
-    <configuration name="excel-exploration" type="PythonConfigurationType" factoryName="Python" temporary="true">
+  <component name="RunManager" selected="Python.authors">
+    <configuration name="authors" type="PythonConfigurationType" factoryName="Python" temporary="true">
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
       <envs>
         <env name="PYTHONUNBUFFERED" value="1" />
       </envs>
       <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/Data Wranglling in Excel" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/Extracting Data From XML" />
       <option name="IS_MODULE_SDK" value="true" />
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
       <module name="Data Wrangling" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/Data Wranglling in Excel/excel-exploration.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/Extracting Data From XML/authors.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
@@ -214,19 +219,19 @@
       <option name="EMULATE_TERMINAL" value="false" />
     </configuration>
     <list size="5">
-      <item index="0" class="java.lang.String" itemvalue="Python.excel-exploration" />
-      <item index="1" class="java.lang.String" itemvalue="Python.musicbrainz" />
-      <item index="2" class="java.lang.String" itemvalue="Python.excel-using-csv-module" />
-      <item index="3" class="java.lang.String" itemvalue="Python.excel-to-csv" />
-      <item index="4" class="java.lang.String" itemvalue="Python.nytimes" />
+      <item index="0" class="java.lang.String" itemvalue="Python.musicbrainz" />
+      <item index="1" class="java.lang.String" itemvalue="Python.excel-using-csv-module" />
+      <item index="2" class="java.lang.String" itemvalue="Python.excel-to-csv" />
+      <item index="3" class="java.lang.String" itemvalue="Python.nytimes" />
+      <item index="4" class="java.lang.String" itemvalue="Python.authors" />
     </list>
     <recent_temporary>
       <list size="5">
-        <item index="0" class="java.lang.String" itemvalue="Python.nytimes" />
-        <item index="1" class="java.lang.String" itemvalue="Python.excel-to-csv" />
-        <item index="2" class="java.lang.String" itemvalue="Python.excel-using-csv-module" />
-        <item index="3" class="java.lang.String" itemvalue="Python.musicbrainz" />
-        <item index="4" class="java.lang.String" itemvalue="Python.excel-exploration" />
+        <item index="0" class="java.lang.String" itemvalue="Python.authors" />
+        <item index="1" class="java.lang.String" itemvalue="Python.nytimes" />
+        <item index="2" class="java.lang.String" itemvalue="Python.excel-to-csv" />
+        <item index="3" class="java.lang.String" itemvalue="Python.excel-using-csv-module" />
+        <item index="4" class="java.lang.String" itemvalue="Python.musicbrainz" />
       </list>
     </recent_temporary>
   </component>
@@ -303,6 +308,31 @@
           <line>99</line>
           <option name="timeStamp" value="30" />
         </line-breakpoint>
+        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
+          <url>file://$PROJECT_DIR$/Extracting Data From XML/authors.py</url>
+          <line>13</line>
+          <option name="timeStamp" value="33" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
+          <url>file://$PROJECT_DIR$/Extracting Data From XML/authors.py</url>
+          <line>45</line>
+          <option name="timeStamp" value="34" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
+          <url>file://$PROJECT_DIR$/Extracting Data From XML/authors.py</url>
+          <line>17</line>
+          <option name="timeStamp" value="36" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
+          <url>file://$PROJECT_DIR$/Extracting Data From XML/authors.py</url>
+          <line>29</line>
+          <option name="timeStamp" value="37" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
+          <url>file://$PROJECT_DIR$/Extracting Data From XML/authors.py</url>
+          <line>46</line>
+          <option name="timeStamp" value="41" />
+        </line-breakpoint>
       </breakpoints>
       <default-breakpoints>
         <breakpoint type="python-exception">
@@ -311,7 +341,7 @@
           </properties>
         </breakpoint>
       </default-breakpoints>
-      <option name="time" value="33" />
+      <option name="time" value="42" />
     </breakpoint-manager>
     <watches-manager />
   </component>
@@ -399,10 +429,18 @@
     <entry file="file://$PROJECT_DIR$/Data Wranglling in JSON/nytimes.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="-280">
-          <caret line="47" column="38" lean-forward="true" selection-start-line="47" selection-start-column="38" selection-end-line="47" selection-end-column="38" />
+          <caret line="47" column="38" lean-forward="false" selection-start-line="47" selection-start-column="38" selection-end-line="47" selection-end-column="38" />
           <folding>
             <element signature="e#1207#1218#0" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Extracting Data From XML/authors.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="226">
+          <caret line="48" column="0" lean-forward="true" selection-start-line="48" selection-start-column="0" selection-end-line="48" selection-end-column="0" />
+          <folding />
         </state>
       </provider>
     </entry>
