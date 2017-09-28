@@ -6,19 +6,28 @@
 # form field values for "__EVENTVALIDATION" and "__VIEWSTATE" and set the appropriate
 # values in the data dictionary.
 # All your changes should be in the 'extract_data' function
+import pdb
 from bs4 import BeautifulSoup
 import requests
 import json
 
-html_page = "page_source.html"
+html_page = "fixtures/page_source.html"
+
+EVENT_VALIDATION_ID = "__EVENTVALIDATION"
+VIEW_STATE_ID = "__VIEWSTATE"
 
 
 def extract_data(page):
     data = {"eventvalidation": "",
             "viewstate": ""}
+	
+    pdb.set_trace()
+
     with open(page, "r") as html:
-        # do something here to find the necessary values
-        pass
+
+	    soup = BeautifulSoup(html)
+	    data['eventvalidation'] = soup('input', { "id" : EVENT_VALIDATION_ID })[0]['value']
+	    data['viewstate'] = soup('input', { "id" : VIEW_STATE_ID })[0]['value']
 
     return data
 
