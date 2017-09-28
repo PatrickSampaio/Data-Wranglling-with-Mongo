@@ -1,15 +1,3 @@
-#!/usr/bin/env python
-"""
-Your task is as follows:
-- read the provided Excel file
-- find and return the min, max and average values for the COAST region
-- find and return the time value for the min and max entries
-- the time values should be returned as Python tuples
-
-Please see the test function for the expected return format
-
-"""
-
 import xlrd
 from zipfile import ZipFile
 
@@ -19,10 +7,8 @@ def parse_file(datafile):
     workbook = xlrd.open_workbook(datafile)
     sheet = workbook.sheet_by_index(0)
 
-    ### example on how you can get the data
     # sheet_data = [[sheet.cell_value(r, col) for col in range(sheet.ncols)] for r in range(sheet.nrows)]
 
-    ### other useful methods:
     # print "\nROWS, COLUMNS, and CELLS:"
     # print "Number of rows in the sheet:",
     # print sheet.nrows

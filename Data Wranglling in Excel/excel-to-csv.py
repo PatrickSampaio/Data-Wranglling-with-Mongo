@@ -1,12 +1,3 @@
-# -*- coding: utf-8 -*-
-'''
-Find the time and value of max load for each of the regions
-COAST, EAST, FAR_WEST, NORTH, NORTH_C, SOUTHERN, SOUTH_C, WEST
-and write the result out in a csv file, using pipe character | as the delimiter.
-
-An example output can be seen in the "example.csv" file.
-'''
-
 import xlrd
 import os
 import csv
@@ -32,9 +23,7 @@ def parse_file(datafile):
     sheet = workbook.sheet_by_index(0)
     first_row = []
     data = None
-    # YOUR CODE HERE
-    # Remember that you can use xlrd.xldate_as_tuple(sometime, 0) to convert
-    # Excel date to Python tuple of (year, month, day, hour, minute, second)
+
     header = discover_header(sheet)
 
     with open(outfile, 'w+') as csvfile:
@@ -58,9 +47,6 @@ def parse_file(datafile):
 def save_file(data, filename):
     pass
 
-# YOUR CODE HERE
-
-
 def test():
     data = parse_file(datafile)
     save_file(data, outfile)
@@ -83,23 +69,21 @@ def test():
             station = line['Station']
             if station == 'FAR_WEST':
                 for field in FIELDS:
-                    # Check if 'Max Load' is within .1 of answer
+
                     if field == 'Max Load':
                         max_answer = round(float(ans[station][field]), 1)
                         max_line = round(float(line[field]), 1)
                         assert max_answer == max_line
 
-                    # Otherwise check for equality
+
                     else:
                         assert ans[station][field] == line[field]
 
             number_of_rows += 1
             stations.append(station)
 
-        # Output should be 8 lines not including header
         assert number_of_rows == 8
 
-        # Check Station Names
         assert set(stations) == set(correct_stations)
 
 

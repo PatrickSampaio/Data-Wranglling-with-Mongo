@@ -39,31 +39,21 @@ def AnswerQuestion():
     answerFirstAidKit()
 
 def main():
-    """
-    Below is an example investigation to help you get started in your
-    exploration. Modify the function calls and indexing below to answer the
-    questions on the next quiz.
 
-    HINT: Note how the output we get from the site is a multi-level JSON
-    document, so try making print statements to step through the structure one
-    level at a time or copy the output to a separate output file. Experimenting
-    and iteration will be key to understand the structure of the data!
-    """
     request = RequestUtils(ARTIST_URL)
-    # Query for information in the database about bands named Nirvana
+
     results = request.query_by_name(query_type["simple"], "Nirvana")
     pretty_print(results)
 
-    # Isolate information from the 4th band returned (index 3)
+
     print ("\nARTIST:")
     pretty_print(results["artists"][3])
 
-    # Query for releases from that band using the artist_id
     artist_id = results["artists"][3]["id"]
     artist_data = request.query_site(query_type["releases"], artist_id)
     releases = artist_data["releases"]
 
-    # Print information about releases from the selected band
+
     print ("\nONE RELEASE:")
     pretty_print(releases[0], indent=2)
 

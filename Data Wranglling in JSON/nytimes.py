@@ -1,28 +1,3 @@
-#!/usr/bin/env python
-# -*- coding: utf-8 -*-
-"""
-This exercise shows some important concepts that you should be aware about:
-- using codecs module to write unicode files
-- using authentication with web APIs
-- using offset when accessing web APIs
-
-To run this code locally you have to register at the NYTimes developer site
-and get your own API key. You will be able to complete this exercise in our UI
-without doing so, as we have provided a sample result. (See the file
-'popular-viewed-1.json' from the tabs above.)
-
-Your task is to modify the article_overview() function to process the saved
-file that represents the most popular articles (by view count) from the last
-day, and return a tuple of variables containing the following data:
-- labels: list of dictionaries, where the keys are the "section" values and
-  values are the "title" values for each of the retrieved articles.
-- urls: list of URLs for all 'media' entries with "format": "Standard Thumbnail"
-
-All your changes should be in the article_overview() function. See the test()
-function for examples of the elements of the output lists.
-The rest of functions are provided for your convenience, if you want to access
-the API by yourself.
-"""
 import json
 import codecs
 import requests
@@ -46,7 +21,7 @@ def get_from_file(kind, period):
 def article_overview(kind, period):
     data = get_from_file(kind, period)
     all_news = [news for news in data]
-        #[news[URL_FIELD] for news in data]
+
     titles = []
     urls = []
 
@@ -59,8 +34,8 @@ def article_overview(kind, period):
 
 
 def get_popular(kind, days, section="all-sections", offset=0):
-    # This function will construct the query according to the requirements of the site
-    # and return the data, or print an error message if called incorrectly
+
+
     if days not in [1, 7, 30]:
 
         print("Time period can be 1,7, 30 days only")
@@ -78,8 +53,8 @@ def get_popular(kind, days, section="all-sections", offset=0):
 
 
 def save_file(kind, period):
-    # This will process all results, by calling the API repeatedly with supplied offset value,
-    # combine the data and then write all results in a file.
+
+
     data = get_popular(URL_POPULAR, "viewed", 1)
     num_results = data["num_results"]
     full_data = []
