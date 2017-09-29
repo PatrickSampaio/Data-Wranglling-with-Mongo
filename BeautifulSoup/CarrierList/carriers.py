@@ -13,18 +13,20 @@
 #only. You will not be able to to actually use it from within the Udacity web UI.
 #"""
 
+import pdb
 from bs4 import BeautifulSoup
 html_page = "options.html"
 
 
 def extract_carriers(page):
-    data = []
 
-    with open(page, "r") as html:
-        # do something here to find the necessary values
+    with open(html_page, "r") as html:
         soup = BeautifulSoup(html, "lxml")
 
-    return data
+    all_carriers_option = soup.find("select", {"id": "CarrierList"}).findAll("option")
+    all_carriers_value = [carrier["value"] for carrier in all_carriers_option[3:]]
+
+    return all_carriers_value
 
 
 def make_request(data):
