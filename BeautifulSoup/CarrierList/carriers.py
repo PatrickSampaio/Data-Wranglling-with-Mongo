@@ -24,7 +24,7 @@ def extract_carriers(page):
         soup = BeautifulSoup(html, "lxml")
 
     all_carriers_option = soup.find("select", {"id": "CarrierList"}).findAll("option")
-    all_carriers_value = [carrier["value"] for carrier in all_carriers_option[3:]]
+    all_carriers_value = [carrier["value"] for carrier in all_carriers_option[3:    ]]
 
     return all_carriers_value
 
