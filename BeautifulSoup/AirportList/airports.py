@@ -5,18 +5,22 @@
 #of what is actually on the website. The test() assertions are based on the
 #given file.
 
-
+import pdb
 from bs4 import BeautifulSoup
 html_page = "options.html"
 
 
 def extract_airports(page):
-    data = []
-    with open(page, "r") as html:
-        # do something here to find the necessary values
-        soup = BeautifulSoup(html, "lxml")
 
-    return data
+    with open(page, "r") as html:
+        soup = BeautifulSoup(html, "lxml")
+    
+    airports_options = soup.find("select", {"id" : "AirportList"}).findAll("option")
+    all_airports_value = [airports_options["value"]  for airports_options in airports_options[2:]]
+   
+    del all_airports_value[all_airports_value.index("AllOthers")]
+ 
+    return all_airports_value
 
 
 def test():
