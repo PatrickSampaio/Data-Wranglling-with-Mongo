@@ -9,10 +9,13 @@ INPUT_FILE = '../../fixtures/autos.csv'
 OUTPUT_GOOD = '../../fixtures/autos-valid.csv'
 OUTPUT_BAD = '../../fixtures/FIXME-autos.csv'
 REGEX_IS_DATE = re.compile("^\\d{4}[-]?\\d{1,2}[-]?\\d{1,2}T\\d{1,2}:\\d{1,2}:\\d{1,2}[,]?\\d{1,3}")
-
+REGEX_IS_URL = re.compile('http[s]?://(?:[a-zA-Z]|[0-9]|[$-_@.&+]|[!*\(\),]|(?:%[0-9a-fA-F][0-9a-fA-F]))+')
 
 def check_for_url(url):
-    return "good"
+    if REGEX_IS_URL.match(url) != None:
+        return "good"
+    else:
+        return "bad" 
 
 def check_for_year_range(year):
 
@@ -31,7 +34,7 @@ def check_for_year(is_year):
 def row_validations(row_dict):
     row_state = check_for_year(row_dict["productionStartYear"])
     row_state = check_for_year_range(row_dict["productionStartYear"]) if row_state == "good" else "bad"
-    row_state = check_for_url(row_dict["URI"])
+    row_state =  check_for_url(row_dict["URI"]) if row_state == "good" else "bad"
     return row_state
 	
 	
@@ -58,16 +61,17 @@ def process_file(input_file, output_good, output_bad):
             elif is_good_file == "bad" :
                 bad_file.append(row_dict)
 
-        #COMPLETE THIS FUNCTION
-    pdb.set_trace()
-
-    # This is just an example on how you can use csv.DictWriter
-    # Remember that you have to output 2 files
     with open(output_good, "w") as g:
         writer = csv.DictWriter(g, delimiter=",", fieldnames= header)
         writer.writeheader()
-        for row in YOURDATA:
-            writer.writerow(row)
+        for file_row in good_file:
+            writer.writerow(file_row)
+
+    with open(output_bad, "w") as b:
+        writer = csv.DictWriter(b, delimiter=",", fieldnames= header)
+        writer.writeheader()
+        for file_row in bad_file:
+            writer.writerow(file_row)
 
 
 def test():
