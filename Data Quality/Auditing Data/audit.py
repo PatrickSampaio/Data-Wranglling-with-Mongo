@@ -2,6 +2,9 @@ import codecs
 import csv
 import json
 import pprint
+import pdb
+
+PATH_TO_DATA = "../../fixtures/autos.csv"
 
 CITIES = 'cities.csv'
 
@@ -13,10 +16,24 @@ FIELDS = ["name", "timeZone_label", "utcOffset", "homepage", "governmentType_lab
 def audit_file(filename, fields):
     fieldtypes = {}
 
-    # YOUR CODE HERE
+    with open(PATH_TO_DATA, "r") as data_csv:
+        pdb.set_trace()
+        csv_lines = csv.reader(data_csv)
+        current_csv = []
 
+        for i in range(2): csv_lines.next()
 
-    return fieldtypes
+        for data_line in csv_lines:
+            current_line = {}
+            for field in FIELDS:
+                try:
+                   current_line[field] = type(data_line[FIELDS.index(field)])
+                except IndexError:
+                   print("error")
+            current_csv.append(current_line)
+
+    pdb.set_trace()
+    return current_csv
 
 
 def test():
