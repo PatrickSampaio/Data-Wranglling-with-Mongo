@@ -20,21 +20,26 @@ def audit_file(filename, fields):
         pdb.set_trace()
         csv_lines = csv.reader(data_csv)
         current_csv = []
+        csv_header = []
 
-        for i in range(2): csv_lines.next()
+        csv_header = csv_lines.next()
+
+        for i in range(1): csv_lines.next()
 
         for data_line in csv_lines:
             current_line = {}
-            for field in FIELDS:
+            for field in csv_header:
                 try:
-                   current_line[field] = type(data_line[FIELDS.index(field)])
+                   current_line[field] = type(data_line[csv_header.index(field)])
                 except IndexError:
                    print("error")
             current_csv.append(current_line)
     
     for field in FIELDS:
         current_types = []
-        [current_types.append(type(current_item[field]) for current_item in current_csv if type(current_item[field]) not in current_types][
+        pdb.set_trace()
+       # [current_types.append(type(current_item[field]) for current_item in current_csv if type(current_item[field]) not in current_types]
+        [current_types.append(current_item[field]) for current_item in current_csv if field in current_item and current_item[field] not in current_types]
         fieldtypes[field] = current_types
     
     return fieldtypes
