@@ -5,7 +5,7 @@ import pprint
 import pdb
 
 CITIES = '../../fixtures/cities.csv'
-
+REGEX_AREA = regex = re.compile("^{.*\}$")
 
 def fix_area(area):
 
