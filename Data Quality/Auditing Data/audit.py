@@ -31,9 +31,13 @@ def audit_file(filename, fields):
                 except IndexError:
                    print("error")
             current_csv.append(current_line)
-
-    pdb.set_trace()
-    return current_csv
+    
+    for field in FIELDS:
+        current_types = []
+        [current_types.append(type(current_item[field]) for current_item in current_csv if type(current_item[field]) not in current_types][
+        fieldtypes[field] = current_types
+    
+    return fieldtypes
 
 
 def test():
