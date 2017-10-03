@@ -16,19 +16,16 @@ def fix_area(area):
 
 
 def process_file(filename):
-    # CHANGES TO THIS FUNCTION WILL BE IGNORED WHEN YOU SUBMIT THE EXERCISE
     data = []
 
     with open(filename, "r") as f:
         reader = csv.DictReader(f)
 
-        #skipping the extra metadata
         for i in range(3):
             l = reader.next()
 
-        # processing file
         for line in reader:
-            # calling your function to fix the area value
+            
             if "areaLand" in line:
                 line["areaLand"] = fix_area(line["areaLand"])
             data.append(line)
