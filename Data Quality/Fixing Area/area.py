@@ -3,13 +3,22 @@ import csv
 import json
 import pprint
 import pdb
+import re
 
 CITIES = '../../fixtures/cities.csv'
 REGEX_AREA = regex = re.compile("^{.*\}$")
 
 def fix_area(area):
 
-    pdb.set_trace()
+    if(REGEX_AREA.match(area) is not None):
+        number_left = float(area[1:area.index("|")])
+        number_right =  float(area[area.index("|")+1:len(area)-1])
+        area = number_left if len(str(number_left).replace('.','').strip('0')) > len(str(number_right).replace('.','').strip('0')) else number_right
+    else:
+        try:
+            area = float(area)
+        except ValueError:
+            area = None
 
     return area
 
