@@ -1,14 +1,14 @@
 #!/usr/bin/env python
-"""
-Your task is to write a query that will return all cities
-that are founded in 21st century.
-Please modify only 'range_query' function, as only that will be taken into account.
+#"""
+#Your task is to write a query that will return all cities
+#that are founded in 21st century.
+#Please modify only 'range_query' function, as only that will be taken into account.
 
-Your code will be run against a MongoDB instance that we have provided.
-If you want to run this code locally on your machine,
-you have to install MongoDB, download and insert the dataset.
-For instructions related to MongoDB setup and datasets please see Course Materials.
-"""
+#Your code will be run against a MongoDB instance that we have provided.
+#If you want to run this code locally on your machine,
+#you have to install MongoDB, download and insert the dataset.
+#For instructions related to MongoDB setup and datasets please see Course Materials.
+#"""
 
 from datetime import datetime
     
