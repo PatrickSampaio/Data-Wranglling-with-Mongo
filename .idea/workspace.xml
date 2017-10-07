@@ -1,7 +1,12 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="f4faec39-03ff-4511-85fb-ec9c407919ff" name="Default" comment="" />
+    <list default="true" id="f4faec39-03ff-4511-85fb-ec9c407919ff" name="Default" comment="">
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Working_With_MongoDB/find_porsche.py" afterPath="" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Working_With_MongoDB/Mongo_Final/.processing.py.swp" afterPath="$PROJECT_DIR$/Working_With_MongoDB/Mongo_Final/.processing.py.swp" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Working_With_MongoDB/Mongo_Final/processing.py" afterPath="$PROJECT_DIR$/Working_With_MongoDB/Mongo_Final/processing.py" />
+    </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -23,12 +28,24 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="insert.py" pinned="false" current-in-tab="true">
+      <file leaf-file-name="insert.py" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/Working_With_MongoDB/Load_Data/insert.py">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="285">
-              <caret line="21" column="0" lean-forward="true" selection-start-line="0" selection-start-column="0" selection-end-line="21" selection-end-column="0" />
+              <caret line="21" column="0" lean-forward="true" selection-start-line="21" selection-start-column="0" selection-end-line="21" selection-end-column="0" />
               <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="processing.py" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/Working_With_MongoDB/Mongo_Final/processing.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="78">
+              <caret line="122" column="29" lean-forward="false" selection-start-line="122" selection-start-column="29" selection-end-line="122" selection-end-column="29" />
+              <folding>
+                <element signature="e#1980#1993#0" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -70,6 +87,7 @@
         <option value="$PROJECT_DIR$/BeautifulSoup/AirportList/airports.py" />
         <option value="$PROJECT_DIR$/BeautifulSoup/Process/process.py" />
         <option value="$PROJECT_DIR$/Working_With_MongoDB/Load_Data/insert.py" />
+        <option value="$PROJECT_DIR$/Working_With_MongoDB/Mongo_Final/processing.py" />
       </list>
     </option>
   </component>
@@ -110,7 +128,7 @@
               <item name="Data Wrangling" type="b2602c69:ProjectViewProjectNode" />
               <item name="Data Wrangling" type="462c0819:PsiDirectoryNode" />
               <item name="Working_With_MongoDB" type="462c0819:PsiDirectoryNode" />
-              <item name="Load_Data" type="462c0819:PsiDirectoryNode" />
+              <item name="Mongo_Final" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
@@ -695,8 +713,18 @@
     <entry file="file://$PROJECT_DIR$/Working_With_MongoDB/Load_Data/insert.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="285">
-          <caret line="21" column="0" lean-forward="true" selection-start-line="0" selection-start-column="0" selection-end-line="21" selection-end-column="0" />
+          <caret line="21" column="0" lean-forward="true" selection-start-line="21" selection-start-column="0" selection-end-line="21" selection-end-column="0" />
           <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Working_With_MongoDB/Mongo_Final/processing.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="78">
+          <caret line="122" column="29" lean-forward="false" selection-start-line="122" selection-start-column="29" selection-end-line="122" selection-end-column="29" />
+          <folding>
+            <element signature="e#1980#1993#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>

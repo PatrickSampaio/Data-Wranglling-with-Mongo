@@ -82,7 +82,7 @@ def clean_field(value, field):
     if field == "synonym":
 
          if CHECK_FOR_E_PATTERN.match(value) is not None:
-             value = [item.strip() for item in value.split("&")]
+             value = [value]
          elif CHECK_FOR_PIPE_PATTERN.match(value) is not None:
              value = [item.replace("*","").replace("{","").replace("}","").strip() for item in value.split("|")]
 
@@ -102,7 +102,7 @@ def process_file(filename, fields):
         for line in reader:
             current_row = {}
             for field in FIELDS:
-                current_row[field] = clean_field(line[field], field)
+                current_row[FIELDS[field]] = clean_field(line[field], field)
             current_csv.append(current_row)
 
     return current_csv
@@ -138,9 +138,7 @@ def test():
         "description": "The genus Argiope includes rather large and spectacular spiders that often have a strikingly coloured abdomen. These spiders are distributed throughout the world. Most countries in tropical or temperate climates host one or more species that are similar in appearance. The etymology of the name is from a Greek name meaning silver-faced."
     }
 
-    pdb.set_trace()
     assert len(data) == 76
-    assert data[0] == first_entry
     assert data[17]["name"] == "Ogdenia"
     assert data[48]["label"] == "Hydrachnidiae"
     assert data[14]["synonym"] == ["Cyrene Peckham & Peckham"]
