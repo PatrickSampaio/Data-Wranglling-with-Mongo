@@ -1,3 +1,5 @@
+import pdb
+
 def get_db(db_name):
     from pymongo import MongoClient
     client = MongoClient('localhost:27017')
@@ -6,10 +8,16 @@ def get_db(db_name):
 
 def make_pipeline():
     pipeline = [ ]
-    pipeline_match = {"$match": {"user.time_zone":{"$in": ['Brasilia']}, "user.statuses_count": {"$gt": 100}} }
-    pipeline_project = {"$project": {"followers": "$user.followers_count"}}
-    pipeline_sort = {"$sort": {"followers": -1}}
+    pipeline_unwind = {"$unwind": "$entities.user_mentions"}
+    pipeline_group = {"$group": {"_id": "$user.screen_name", "count" : { "$sum" : 1 } } }
+    pipeline_sort = {"$sort": { "count" : -1 } }
     pipeline_limit = {"$limit": 1}
+""" 
+Add a single line of code to the insert_autos function that will insert the
+automobile data into the 'autos' collection. The data variable that is
+returned from the process_file function is a list of dictionaries, as in the
+example in the previous video.
+"""}
     pipeline = [pipeline_match, pipeline_project, pipeline_sort, pipeline_limit]
     return pipeline
 
@@ -22,6 +30,4 @@ if __name__ == '__main__':
     db = get_db('examples')
     pipeline = make_pipeline()
     result = aggregate(db, pipeline)
-    assert len(result) == 1
-    assert result[0]["followers"] == 17209
 
